@@ -21,6 +21,7 @@ export default function Home() {
       const data = await response.json();
       setHaiku(data.haiku);
     } catch (error) {
+      console.error('API取得エラー', error)
       setHaiku("俳句の生成に失敗しました");
     } finally {
       setLoading(false);
