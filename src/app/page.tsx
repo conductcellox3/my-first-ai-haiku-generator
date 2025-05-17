@@ -34,7 +34,7 @@ export default function Home() {
 
       <input
         type="text"
-        placeholder="テーマを入力（例：秋の空)"
+        placeholder="テーマを入力（例：秋の空）"
         className="border p-2 rounded-2xl shadow-md w-80"
         value={theme}
         onChange={(e) => setTheme(e.target.value)}
