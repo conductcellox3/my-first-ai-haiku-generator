@@ -19,6 +19,9 @@ export default function Home() {
       });
 
       const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || 'API Error');
+      }
       setHaiku(data.haiku);
     } catch (error) {
       console.error('API取得エラー', error)
