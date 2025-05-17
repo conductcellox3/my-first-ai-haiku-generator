@@ -14,6 +14,15 @@ pnpm dev
 bun dev
 ```
 
+## Configuration
+
+This application requires an OpenAI API key. Create a `.env.local` file in the
+project root and add your key:
+
+```env
+OPENAI_API_KEY=your-api-key
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
